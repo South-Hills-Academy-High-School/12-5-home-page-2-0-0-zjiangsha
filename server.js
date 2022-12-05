@@ -6,10 +6,10 @@ const server = http.createServer((req, res) => {
   var url = req.url;
   if(url ==='/') {
     fs.createReadStream('index.html').pipe(res)
-  } else if(url ==='/favorites')  {
-    fs.createReadStream('favorites.html').pipe(res)
-  }else if(url ==='/about'){  
-    fs.createReadStream('about.html').pipe(res)
+  } else if(url ==='/arizona.html')  {
+    fs.createReadStream('arizona.html').pipe(res)
+  }else if(url ==='/dinosaur'){  
+    fs.createReadStream('dinosaur.html').pipe(res)
   }else {
     res.write('Doesn\'t exist'); 
     res.end(); 
