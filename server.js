@@ -6,7 +6,7 @@ const server = http.createServer((req, res) => {
   var url = req.url;
   if(url ==='/') {
     fs.createReadStream('index.html').pipe(res)
-  } else if(url ==='/arizona.html')  {
+  } else if(url ==='/arizona')  {
     fs.createReadStream('arizona.html').pipe(res)
   }else if(url ==='/dinosaur'){  
     fs.createReadStream('dinosaur.html').pipe(res)
